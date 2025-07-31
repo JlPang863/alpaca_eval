@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-ours4-7-new1-new-sorted-score-diff-full-new,44.84472049689441,1.7539660436124034,community,1346,361,444,0,805,44.84472049689441,54.838922757541376,0.4850019934008414

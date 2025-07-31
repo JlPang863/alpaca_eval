@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-ours4-8-sorted-reward-diff-swap-warmup-full,46.89922480620155,1.7949134661140846,community,3797,363,411,0,774,46.89922480620155,42.8936888782938,0.4643196310068607

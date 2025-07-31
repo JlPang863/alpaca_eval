@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-spa-sorted-reward-diff-full,50.314465408805034,1.7743985079090479,community,4501,400,395,0,795,50.314465408805034,43.978013516022095,0.518055260748562

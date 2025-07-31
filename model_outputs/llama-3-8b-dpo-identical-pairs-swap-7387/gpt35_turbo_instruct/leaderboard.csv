@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-identical-pairs-swap-7387,36.8944099378882,1.7017124493005056,community,3214,297,508,0,805,36.8944099378882,32.46089216923703,0.30345190374703823

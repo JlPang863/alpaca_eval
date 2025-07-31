@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-ours1-1-merged,42.10526315789473,11.637279966159296,community,3441,8,11,0,19,42.10526315789473,39.92459716356328,2.8020309376788988

@@ -1,0 +1,3 @@
+,np.tanh(std_delta_len),instruction_difficulty,not_gamed_baseline.astype(float)
+llama-3-8b-ours1-1-merged,-1.7285776411991345,0.7063114977282838,-1.7453634089105683
+llama-3-8b-dpo-new-merged,-1.7029218170536040,0.6594153352858600,-1.5488132770480210

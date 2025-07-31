@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+Llama-3-Base-8B-SFT,5.584501069102112,0.7421778521597368,community,3366,42,761,2,805,5.341614906832298,2.5374317265050723,0.06931459575677772

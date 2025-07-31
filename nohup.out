@@ -1,0 +1,64 @@
+*** base model: llama-3-8b ***
+*** loss type: dpo-full-eval ***
+*** current model output file: model_outputs_cl_tiny/llama-3-8b-dpo-full-eval/checkpoint-38/model_outputs_full.json ***
+WARNING:root:precomputed_leaderboard = 'auto'. But we have found no corresponding leaderboard
+INFO:root:Evaluating the checkpoint-38 outputs.
+INFO:root:Creating the annotator from `alpaca_eval_gpt4.1`.
+Traceback (most recent call last):
+  File "/home/jlpang/alpaca_eval/venv/bin/alpaca_eval", line 33, in <module>
+    sys.exit(load_entry_point('alpaca-eval', 'console_scripts', 'alpaca_eval')())
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/main.py", line 611, in main
+    fire.Fire(evaluate)
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/main.py", line 154, in evaluate
+    annotator = Annotator(annotators_config=annotators_config, **annotator_kwargs)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/pairwise_evaluator.py", line 51, in __init__
+    super().__init__(*args, **kwargs, primary_keys=self.input_keys + self.output_keys)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/base.py", line 515, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/base.py", line 134, in __init__
+    self.annotators = self._initialize_annotators(**single_annotator_kwargs)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/base.py", line 255, in _initialize_annotators
+    return {
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/base.py", line 256, in <dictcomp>
+    name: self.SingleAnnotator(
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/pairwise_evaluator.py", line 372, in __init__
+    super().__init__(
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/annotators/base.py", line 662, in __init__
+    self.fn_completions = get_fn_completions(fn_completions)
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/decoders/__init__.py", line 32, in get_fn_completions
+    from .openai import openai_completions
+  File "/home/jlpang/alpaca_eval/src/alpaca_eval/decoders/openai.py", line 13, in <module>
+    import openai
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/__init__.py", line 11, in <module>
+    from ._client import Client, OpenAI, Stream, Timeout, Transport, AsyncClient, AsyncOpenAI, AsyncStream, RequestOptions
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/_client.py", line 28, in <module>
+    from .resources import files, images, models, batches, embeddings, completions, moderations
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/__init__.py", line 3, in <module>
+    from .beta import (
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/beta/__init__.py", line 3, in <module>
+    from .beta import (
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/beta/beta.py", line 6, in <module>
+    from .chat.chat import Chat, AsyncChat
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/beta/chat/__init__.py", line 3, in <module>
+    from .chat import Chat, AsyncChat
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/beta/chat/chat.py", line 6, in <module>
+    from .completions import Completions, AsyncCompletions
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/resources/beta/chat/completions.py", line 30, in <module>
+    from ....lib.streaming.chat import ChatCompletionStreamManager, AsyncChatCompletionStreamManager
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/lib/streaming/__init__.py", line 1, in <module>
+    from ._assistants import (
+  File "/home/jlpang/alpaca_eval/venv/lib/python3.10/site-packages/openai/lib/streaming/_assistants.py", line 14, in <module>
+    from ...types.beta import AssistantStreamEvent
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt

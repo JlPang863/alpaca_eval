@@ -1,0 +1,2 @@
+,np.tanh(std_delta_len),instruction_difficulty,not_gamed_baseline.astype(float)
+Llama-3-Base-8B-SFT,-1.8366736712054872,0.7446418451390375,-9.6001902227134153

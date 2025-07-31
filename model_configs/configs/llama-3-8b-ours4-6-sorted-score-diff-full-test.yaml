@@ -1,0 +1,36 @@
+llama-3-8b-ours4-6-sorted-score-diff-full-test:
+  completions_kwargs:
+    batch_size: 16
+    do_sample: True
+    max_new_tokens: 2048
+    model_kwargs:
+      dtype: bfloat16
+    model_name: /mnt/data1/jinlong/CL_DPO_outputs/llama-3-8b-ours4-6-sorted-score-diff-full
+    stop_token_ids:
+    - 128001
+    - 128009
+    temperature: 0.9
+    top_p: 1.0
+  fn_completions: vllm_local_completions
+  pretty_name: llama-3-8b-ours4-6-sorted-score-diff-full
+  prompt_template: /home/jlpang/alpaca_eval/model_configs/templates/llama3.txt
+
+
+
+# Llama-3-Instruct-8B-SimPO:
+#   completions_kwargs:
+#     batch_size: 900
+#     use_beam_search: true
+#     max_new_tokens: 4096
+#     model_kwargs:
+#       dtype: bfloat16
+#     model_name: princeton-nlp/Llama-3-Instruct-8B-SimPO 
+#     stop_token_ids:
+#     - 128001
+#     - 128009
+#     temperature: 0.9
+#     top_p: 1.0
+#   fn_completions: vllm_local_completions
+#   pretty_name: Llama-3-Instruct-8B-SimPO 
+#   prompt_template: Llama-3-Instruct-8B-SimPO/prompt.txt
+#   link: https://huggingface.co/princeton-nlp/Llama-3-Instruct-8B-SimPO

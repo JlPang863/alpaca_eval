@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-random-identical-reverse,40.62893081761006,1.7429899404377183,community,4344,323,472,0,795,40.62893081761006,32.633394399863995,0.34866086215338865

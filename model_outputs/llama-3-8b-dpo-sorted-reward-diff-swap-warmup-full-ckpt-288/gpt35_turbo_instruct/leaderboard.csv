@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-sorted-reward-diff-swap-warmup-full-ckpt-288,47.91929382093317,1.7751336063660088,community,4782,380,413,0,793,47.91929382093317,44.04095617941765,0.5024120846218437

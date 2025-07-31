@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-new1-sorted-docta-score-diff-swap-half,49.685534591194966,1.7743985079090479,community,4580,395,400,0,795,49.685534591194966,42.36897295386126,0.5045773309078005

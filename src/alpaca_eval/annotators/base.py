@@ -215,6 +215,7 @@ class BaseAnnotator(abc.ABC):
         all_annotated = []
         for df_chunk in utils.dataframe_chunk_generator(df_to_annotate, chunksize, tqdm_desc="Annotation chunk"):
             curr_df_to_annotate = self._preprocess(df_chunk)
+            # import pdb; pdb.set_trace()
             df_annotated = self._annotate(curr_df_to_annotate, **decoding_kwargs)
             annotated = self._postprocess_and_store_(df_annotated, df_chunk)
             all_annotated.extend(annotated)
@@ -264,6 +265,7 @@ class BaseAnnotator(abc.ABC):
         }
 
     def _add_missing_primary_keys_(self, df: pd.DataFrame):
+
         missing_primary_keys = [c for c in self.primary_keys if c not in df.columns]
         if self.is_raise_if_missing_primary_keys:
             if len(missing_primary_keys) > 0:
@@ -299,12 +301,13 @@ class BaseAnnotator(abc.ABC):
 
         if self.is_avoid_reannotations:
             df_to_annotate = self._apply_cached_annotations(df_to_annotate)
+        # import pdb; pdb.set_trace()
 
         return df_to_annotate
 
     def _annotate(self, df_to_annotate: pd.DataFrame, **decoding_kwargs) -> pd.DataFrame:
         """Annotate the examples."""
-
+        # import pdb;pdb.set_trace()
         df_annotated = df_to_annotate.copy()
         for annotator in self.annotators.keys():
             # only annotate examples that have not been annotated yet
@@ -457,6 +460,7 @@ class BaseAnnotator(abc.ABC):
                 df_partially_annotated[self.all_keys + annotation_keys + other_keys_to_keep],
                 **kwargs,
             )
+            
         except ValueError:
             # can have merging issues if columns have different dtypes
             df_partially_annotated = df_partially_annotated.astype({k: str for k in self.all_keys})
@@ -464,12 +468,14 @@ class BaseAnnotator(abc.ABC):
                 df_partially_annotated[self.all_keys + annotation_keys + other_keys_to_keep],
                 **kwargs,
             )
-
+            
+        # import pdb; pdb.set_trace()
         # if columns were in both dataframes, try to merge them
         for c in other_keys_to_keep + [self.annotation_key]:
             if f"{c}_old" in df_to_annotate.columns and f"{c}_new" in df_to_annotate.columns:
                 df_to_annotate[c] = df_to_annotate[c + "_old"].fillna(df_to_annotate[c + "_new"])
                 df_to_annotate = df_to_annotate.drop(columns=[c + "_old", c + "_new"])
+        # import pdb; pdb.set_trace()
 
         return df_to_annotate
 

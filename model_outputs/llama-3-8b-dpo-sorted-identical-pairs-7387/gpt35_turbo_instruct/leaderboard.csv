@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-sorted-identical-pairs-7387,35.52795031055901,1.6878847553951846,community,3384,286,519,0,805,35.52795031055901,29.745346770518104,0.3229359333002632

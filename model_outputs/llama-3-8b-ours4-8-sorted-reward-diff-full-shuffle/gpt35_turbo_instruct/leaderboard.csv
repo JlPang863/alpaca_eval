@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-ours4-8-sorted-reward-diff-full-shuffle,47.70514603616133,1.8640170048974531,community,4353,343,376,0,719,47.70514603616133,43.01082431574822,0.47861176672943606

@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-new1-sorted-llama-full,39.119496855345915,1.7319107004131324,community,3695,311,484,0,795,39.119496855345915,33.088148711371126,0.3396251140372317

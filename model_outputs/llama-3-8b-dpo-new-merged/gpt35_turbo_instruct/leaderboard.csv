@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-new-merged,36.39751552795031,1.696855599515329,community,3467,293,512,0,805,36.39751552795031,29.91473511034805,0.2980175927601408

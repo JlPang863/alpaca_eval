@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-dpo-new1-sorted-score-diff-full-sft-combine-ckpt-168,48.134328358208954,1.7632329320763116,community,4495,387,417,0,804,48.134328358208954,42.46127933192477,0.41064504226064286
