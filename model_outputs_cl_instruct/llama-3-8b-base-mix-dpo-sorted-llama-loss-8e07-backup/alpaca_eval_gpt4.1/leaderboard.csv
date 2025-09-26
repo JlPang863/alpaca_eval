@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-base-mix-dpo-sorted-llama-loss-8e07,1.8633540372670807,0.47690872779798144,community,1087,15,790,0,805,1.8633540372670807,2.5224532874135632,0.1257973296397373

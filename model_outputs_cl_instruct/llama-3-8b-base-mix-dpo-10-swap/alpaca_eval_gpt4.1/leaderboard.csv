@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-base-mix-dpo-10-swap,30.31055900621118,1.6208858801617088,community,8510,244,561,0,805,30.31055900621118,8.71581163839407,0.13866575881018528

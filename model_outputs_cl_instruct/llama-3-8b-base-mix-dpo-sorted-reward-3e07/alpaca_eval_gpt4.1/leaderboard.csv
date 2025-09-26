@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-base-mix-dpo-sorted-reward-3e07,12.79503105590062,1.1780487523955228,community,2807,103,702,0,805,12.79503105590062,6.736534964739262,0.17428273805555858

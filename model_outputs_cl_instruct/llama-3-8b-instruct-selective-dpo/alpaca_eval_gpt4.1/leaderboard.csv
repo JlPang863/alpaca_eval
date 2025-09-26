@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-instruct-selective-dpo,1.1180124223602486,0.3602447177071197,community,35,8,795,2,805,1.1180124223602486,3.2503844421912382,0.14127959585753624

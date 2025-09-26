@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-base-mix-dpo-sorted-embedding-dist-3e07,18.88198757763975,1.380239588619423,community,4098,152,653,0,805,18.88198757763975,7.1880423655537955,0.13109936151270693

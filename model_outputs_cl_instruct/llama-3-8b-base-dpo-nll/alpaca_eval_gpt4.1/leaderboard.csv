@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+llama-3-8b-base-dpo-nll,8.4472049689441,0.9807635016419884,community,3180,68,737,0,805,8.4472049689441,4.249452257792287,0.12612751383712642

@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+mistral-7b-instruct-mix-dpo-lr2,9.06832298136646,1.0127285789783147,community,1695,73,732,0,805,9.06832298136646,9.840977305253098,0.43143248500131604
