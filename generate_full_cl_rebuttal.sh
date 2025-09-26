@@ -5,27 +5,29 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 NUM_GPUS=8
 
 main_process_port=29517
-root_path="/mnt/data1/jinlong/CL_DPO_outputs"
+root_path="/home/azureuser/cloudfiles/code/Users/jinlong.pang/QualityDPO/CL_DPO_outputs"
 
 BATCH_SIZE=4
-OUTPUT_PATH="./model_outputs_cl"
+OUTPUT_PATH="./model_outputs_cl_instruct"
 
 BASE_MODELS=(
-    # llama-3-8b
+    llama-3-8b
     mistral-7b
 )
 
 # model_type='instruct'
 model_type='base'
 loss_type_list=(
-    sft-chosen
+    # sft-chosen
     # org
     # dpo
     # simpo
+
     # selective-dpo
     # mix-dpo
     # dpo-identical-pairs-high-quality-2000
     # dpo-identical-pairs-low-quality-2000
+    mix-dpo-10-swap
     ) 
 
 

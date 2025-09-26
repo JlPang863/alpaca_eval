@@ -10,13 +10,13 @@ eval_model="alpaca_eval_gpt4.1"
 # base_model="mistral-7b" 
 BASE_MODELS=(
     llama-3-8b
-    mistral-7b
+    # mistral-7b
 )
 
 # model_type='instruct'
 model_type='base'
 loss_type_list=(
-    sft-chosen
+    # sft-chosen
     # org
     # dpo
     # simpo
@@ -24,9 +24,10 @@ loss_type_list=(
     # mix-dpo
     # dpo-identical-pairs-high-quality-2000
     # dpo-identical-pairs-low-quality-2000
+    mix-dpo-10-swap
     ) 
 
-model_output_path="model_outputs_cl"
+model_output_path="model_outputs_cl_instruct"
 
 # response_file="model_outputs_20.json" ###test4
 response_file="model_outputs_full.json" ###full

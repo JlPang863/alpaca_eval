@@ -7,3 +7,7 @@ fire
 scipy
 patsy
 scikit-learn
+transformers
+protobuf
+blobfile
+accelerate
